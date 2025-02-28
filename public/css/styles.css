@@ -1,0 +1,21 @@
+.btn-top-margin-10{
+	margin-top: 10px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height for correct layout calculations */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes up full viewport height */
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+html {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
