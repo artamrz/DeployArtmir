@@ -18,7 +18,7 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/github-actions
         chmod 600 ~/.ssh/github-actions
-        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+        ssh-keyscan -p 65002 -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
     - name: Deploy to Server
       run: |
