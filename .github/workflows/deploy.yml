@@ -27,15 +27,15 @@ jobs:
           git reset --hard HEAD
           git clean -fd
           git pull origin main
-          composer.phar install --no-dev --optimize-autoloader
+          php composer.phar install --no-dev --optimize-autoloader
           php artisan migrate --force
           php artisan cache:clear
           php artisan config:clear
           php artisan config:cache
           php artisan route:cache
           php artisan queue:restart
-          chown -R www-data:www-data ~/domains/rtamir.com
+          chown -R u772497795 ~/domains/rtamir.com
           chmod -R 775 ~/domains/rtamir.com/storage ~/domains/rtamir.com/bootstrap/cache
-          systemctl restart nginx
+
         EOF
 
