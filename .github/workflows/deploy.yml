@@ -34,8 +34,8 @@ jobs:
           php artisan config:cache
           php artisan route:cache
           php artisan queue:restart
-          sudo chown -R www-data:www-data ~/domains/rtamir.com
-          sudo chmod -R 775 ~/domains/rtamir.com/storage ~/domains/rtamir.com/bootstrap/cache
-          sudo systemctl restart nginx
+          chown -R www-data:www-data ~/domains/rtamir.com
+          chmod -R 775 ~/domains/rtamir.com/storage ~/domains/rtamir.com/bootstrap/cache
+          systemctl restart nginx
         EOF
 
