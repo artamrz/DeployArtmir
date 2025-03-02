@@ -9,7 +9,7 @@
       tinymce.init({
         selector: 'textarea',
         plugins: 'link',
-        manubar: false,
+        menubar: false,
       });
     </script>
 
