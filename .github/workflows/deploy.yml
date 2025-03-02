@@ -28,6 +28,9 @@ jobs:
           git clean -fd
           git pull origin main
           php composer.phar install --no-dev --optimize-autoloader
+          rm -rf ~/domains/rtamir.com/public_html
+          ln -s ~/domains/rtamir.com/public ~/domains/rtamir.com/public_html
+          php artisan key:generate --ansi
           php artisan migrate --force
           php artisan cache:clear
           php artisan config:clear
