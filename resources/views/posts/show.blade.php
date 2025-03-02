@@ -26,6 +26,7 @@
 				</dl>
 				<hr>
 				<form action="{{ route('posts.destroy', $post->id) }}" method="DELETE" data-parsley-validate>
+					@csrf
 					<div class="row">
 						<div class="col-sm-6 d-grid">
                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-dark">Edit</a>
