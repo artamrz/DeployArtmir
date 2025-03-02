@@ -12,6 +12,7 @@
         menubar: false,
       });
     </script>
+@endsection    
 
 @section('content')
      <div class="row">
