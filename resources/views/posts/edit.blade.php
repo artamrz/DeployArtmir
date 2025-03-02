@@ -49,13 +49,19 @@
 @endsection
 @section('scripts')
     <script type="text/javascript" src="{{ asset('js/parsley.min.js') }}"></script>
+    
     <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
 
     <script>
-    ClassicEditor
-        .create(document.querySelector('#ckeditor'))
-        .catch(error => {
-            console.error(error);
+        document.addEventListener("DOMContentLoaded", function() {
+            ClassicEditor
+                .create(document.querySelector('#ckeditor'))
+                .then(editor => {
+                    console.log("CKEditor initialized successfully.");
+                })
+                .catch(error => {
+                    console.error("CKEditor initialization error:", error);
+                });
         });
     </script>
 @endsection
