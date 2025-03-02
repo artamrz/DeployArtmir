@@ -75,7 +75,7 @@ class PostController extends Controller
         $validate = $request -> validate ([
 
             'title' => 'required|max:255',
-            'slug' => 'required|alpha_dash|min:5|max:255|unique:posts,slug'.$id,
+            'slug' => 'required|alpha_dash|min:5|max:255|unique:posts,slug,'.$id,
             'body' =>  'required'          
         ]);
 
