@@ -1,19 +1,6 @@
 @extends('main')
 
 @section('title', 'Create A Post')
-
-@section('stylesheets')
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
-
-    <script>
-    ClassicEditor
-        .create(document.querySelector('#ckeditor'))
-        .catch(error => {
-            console.error(error);
-        });
-    </script>
-@endsection
-
 @section('content')
 
     <div class="row">
@@ -30,7 +17,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" required>
 
                         <label for="body">Post Content</label>
-                        <textarea id="ckeditor" name="body" id="body" class="form-control" rows="5"></textarea><br>
+                        <textarea id="ckeditor" name="body" class="form-control" rows="5"></textarea><br>
 
                         <div class="d-grid gap-2 mt-1">
                         <button type="submit" class="btn btn-dark"> Create Post</button>
@@ -43,7 +30,7 @@
 
 @endsection
 
-@section('scrtips')
+@section('scripts')
     <script type="text/javascript" src="js/parsley.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
 
