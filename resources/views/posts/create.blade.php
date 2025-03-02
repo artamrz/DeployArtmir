@@ -3,14 +3,14 @@
 @section('title', 'Create A Post')
 
 @section('stylesheets')
-    <script src="https://cdn.tiny.cloud/1/{{env('TINYMCE_API_KEY')}}/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
 
     <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins: 'link',
-        menubar: false,
-      });
+    ClassicEditor
+        .create(document.querySelector('#ckeditor'))
+        .catch(error => {
+            console.error(error);
+        });
     </script>
 @endsection
 
@@ -30,7 +30,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" required>
 
                         <label for="body">Post Content</label>
-                        <textarea id="textarea" name="body" id="body" class="form-control" rows="5"></textarea><br>
+                        <textarea id="ckeditor" name="body" id="body" class="form-control" rows="5"></textarea><br>
 
                         <div class="d-grid gap-2 mt-1">
                         <button type="submit" class="btn btn-dark"> Create Post</button>

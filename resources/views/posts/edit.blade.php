@@ -3,14 +3,14 @@
 @section('title','Edit Post')
 
 @section('stylesheets')
-    <script src="https://cdn.tiny.cloud/1/{{env('TINYMCE_API_KEY')}}/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
 
     <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins: 'link',
-        menubar: false,
-      });
+    ClassicEditor
+        .create(document.querySelector('#ckeditor'))
+        .catch(error => {
+            console.error(error);
+        });
     </script>
 @endsection    
 
@@ -30,7 +30,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" value="{{ $post->slug }}" required>
 
                         <label for="body">Post Content</label>
-                        <textarea name="body" id="body" class="form-control">{{ $post->body }}</textarea>
+                        <textarea name="body" id="ckeditor" class="form-control">{{ $post->body }}</textarea>
 
                         <div class="col-md-4 mt-4">
                             <div class="card card-body bg-light">
