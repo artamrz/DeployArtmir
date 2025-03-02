@@ -30,7 +30,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" required>
 
                         <label for="body">Post Content</label>
-                        <input type="textarea" name="body" id="body" class="form-control"><br>
+                        <input id="textarea"type="textarea" name="body" id="body" class="form-control"><br>
 
                         <div class="d-grid gap-2 mt-1">
                         <button type="submit" class="btn btn-dark"> Create Post</button>
