@@ -28,7 +28,7 @@
 					<tr>
 						<th>{{$post->id}}</th>
 						<td>{{$post->title}}</td>
-						<td>{{substr($post->body,0,50)}}{{ strlen($post->body) > 50 ? "..." : ""}} </td>
+						<td>{{substr(strip_tags($post->body),0,50)}}{{ strlen(strip_tags($post->body)) > 50 ? "..." : ""}} </td>
 						<td>{{date('M j, Y',strtotime($post->created_at))}}</td>
 						<td class="d-grid"><a href="{{route('posts.show',$post->id)}}" class=" btn btn-outline-dark">view</a><a href="{{route('posts.edit',$post->id)}}" class="btn btn-outline-dark mt-1">edit</a></td>
 					</tr>	

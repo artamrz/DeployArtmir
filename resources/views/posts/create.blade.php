@@ -2,6 +2,18 @@
 
 @section('title', 'Create A Post')
 
+@section('stylesheets')
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+      tinymce.init({
+        selector: 'textarea',
+        plugins: 'link',
+        manubar: false,
+      });
+    </script>
+@endsection
+
 @section('content')
 
     <div class="row">
@@ -18,7 +30,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" required>
 
                         <label for="body">Post Content</label>
-                        <input type="textarea" name="body" id="body" class="form-control" required><br>
+                        <input type="textarea" name="body" id="body" class="form-control"><br>
 
                         <div class="d-grid gap-2 mt-1">
                         <button type="submit" class="btn btn-dark"> Create Post</button>

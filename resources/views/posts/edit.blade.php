@@ -2,6 +2,17 @@
 
 @section('title','Edit Post')
 
+@section('stylesheets')
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+      tinymce.init({
+        selector: 'textarea',
+        plugins: 'link',
+        manubar: false,
+      });
+    </script>
+
 @section('content')
      <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -18,7 +29,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" value="{{ $post->slug }}" required>
 
                         <label for="body">Post Content</label>
-                        <input type="textarea" name="body" id="body" class="form-control" value="{{ $post->body }}"required><br>
+                        <input type="textarea" name="body" id="body" class="form-control" value="{{ $post->body }}"><br>
 
                         <div class="col-md-4 mt-4">
                             <div class="card card-body bg-light">

@@ -8,7 +8,7 @@
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
 
-			{{ $post->body }}
+			{!! $post->body !!}
 		</div>
 		<div class="col-md-4">
 			<div class="card card-body bg-light">
