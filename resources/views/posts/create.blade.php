@@ -3,7 +3,7 @@
 @section('title', 'Create A Post')
 
 @section('stylesheets')
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/{{ env('TINYMCE_API_KEY') }}/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
     <script>
       tinymce.init({
