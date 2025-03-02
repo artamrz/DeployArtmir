@@ -1,18 +1,6 @@
 @extends('main') 
 
-@section('title','Edit Post')
-
-@section('stylesheets')
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
-
-    <script>
-    ClassicEditor
-        .create(document.querySelector('#ckeditor'))
-        .catch(error => {
-            console.error(error);
-        });
-    </script>
-@endsection    
+@section('title','Edit Post')   
 
 @section('content')
      <div class="row">
@@ -58,4 +46,16 @@
         </div>
     </div>
 
+@endsection
+@section('scrtips')
+    <script type="text/javascript" src="js/parsley.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+
+    <script>
+    ClassicEditor
+        .create(document.querySelector('#ckeditor'))
+        .catch(error => {
+            console.error(error);
+        });
+    </script>
 @endsection
