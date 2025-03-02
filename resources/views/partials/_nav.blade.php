@@ -21,7 +21,7 @@
             <a class="nav-link {{ Request::is('services') ? "active" : "" }}" href="/about">Services </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('blog') ? "active" : "" }}" href="/about">Rlog </a>
+            <a class="nav-link {{ Request::is('rlog') ? "active" : "" }}" href="/rlog">Rlog </a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('about') ? "active" : "" }}" href="/about">About RtaMir </a>

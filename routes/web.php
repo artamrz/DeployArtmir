@@ -16,7 +16,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/rlog', [PageController::class,'getRlog']);
 Route::get('/about', [PageController::class,'getAbout']);
+Route::get('/contact', [PageController::class,'getContact']);
+
 
 Route::get('blog/{slug}',[BlogController::class, 'getSingle']) ->name('blog.single')->where('slug','[\w\d\-\_]+');
 Route::get('blog',[BlogController::class, 'getIndex'])->name('blog.index');
