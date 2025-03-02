@@ -25,7 +25,7 @@
 					<dd>{{date('M j Y h:i a',strtotime($post->updated_at))}}</dd>
 				</dl>
 				<hr>
-				<form action="{{ route('posts.destroy', $post->id) }}" method="DELETE" data-parsley-validate>
+				<form action="{{ route('posts.destroy', $post->id) }}" method="DELETE">
 					@csrf
 					<div class="row">
 						<div class="col-sm-6 d-grid">
