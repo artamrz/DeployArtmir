@@ -8,8 +8,9 @@
             
                 <h1 class="display-5 fw-bold">Edit Your Post</h1>
                 <hr>
-                    <form action="{{ route('posts.update', $post->id) }}" method="PUT" data-parsley-validate>
+                    <form action="{{ route('posts.update', $post->id) }}" method="POST" data-parsley-validate>
                         @csrf
+                        @method('PUT')
                          <label for="title">Title:</label>
                          <input type="text" name="title" id="title" class="form-control" value="{{ $post->title }}" required>
 

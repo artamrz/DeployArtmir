@@ -25,8 +25,9 @@
 					<dd>{{date('M j Y h:i a',strtotime($post->updated_at))}}</dd>
 				</dl>
 				<hr>
-				<form action="{{ route('posts.destroy', $post->id) }}" method="DELETE">
+				<form action="{{ route('posts.destroy', $post->id) }}" method="POST">
 					@csrf
+					@method('DELETE')
 					<div class="row">
 						<div class="col-sm-6 d-grid">
                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-dark">Edit</a>

@@ -83,6 +83,7 @@ class PostController extends Controller
         $post->title = $request -> input('title');
         $post->slug = $request -> input('slug');
         $post->body = $request -> input('body');
+        $post->save();
 
         Session::flash('success',' The Rlog post was successfully updated, see you later!');
         return redirect()->route('posts.show',$post->id);
