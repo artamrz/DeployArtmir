@@ -25,21 +25,20 @@
 					<dd>{{date('M j Y h:i a',strtotime($post->updated_at))}}</dd>
 				</dl>
 				<hr>
-
-				{!! Form::open(['route' =>['posts.destroy',$post->id ],'method' => 'DELETE']) !!}
+				<form action="{{ route('posts.destroy', $post->id) }}" method="DELETE" data-parsley-validate>
 					<div class="row">
 						<div class="col-sm-6 d-grid">
-							{!!Html::linkRoute('posts.edit','Edit',array($post->id),array('class'=>'btn btn-primary'))!!}
-							
-						</div>
-						<div class="col-sm-6 d-grid">
-							{!! Form::submit('Delete',['class' =>'btn btn-danger'])!!}
-						</div>
+                            <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-outline-dark">Edit</a>
+                        </div>
+						<div class="col-sm-6 d-grid"> 
+                            <button type="submit" class="btn btn-dark"> Delete</button>
+                        </div>
 					</div>
-				{!! Form::close()!!}
+				</form>
 				<div class="row">
 					<div class="col-md-12 d-grid mt-3">
 						{!!Html::linkRoute('posts.index','<< See All The Posts ',array($post->id),array('class'=>'btn btn-outline-dark'))!!}
+						<a href="{{ route('posts.index', $post->id) }}" class="btn btn-outline-dark">See All The Rlog Posts</a>
 					</div>
 				</div>
 			</div>
