@@ -29,7 +29,7 @@
                          <input type="text" name="slug" id="slug" class="form-control" maxlength="255" minlength="5" value="{{ $post->slug }}" required>
 
                         <label for="body">Post Content</label>
-                        <textarea name="body" id="body" class="form-control" value="{{ $post->body }}"><br></textarea>
+                        <textarea name="body" id="body" class="form-control">{{ $post->body }}</textarea>
 
                         <div class="col-md-4 mt-4">
                             <div class="card card-body bg-light">
