@@ -10,9 +10,6 @@
           <li class="nav-item">
             <a class="nav-link {{ Request::is('/') ? "active" : "" }} " aria-current="page" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ Request::is('blog') ? "active" : "" }} " aria-current="page" href="/blog">Blog</a>
-          </li>
            <!--<li class="nav-item dropdown ms-auto ">
                 <a class="nav-link dropdown-toggle {{ Request::is('posts') ? "active" : "" }}" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Posts</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown04">
@@ -21,10 +18,13 @@
                 </ul>
             </li> -->
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('about') ? "active" : "" }}" href="/about">Know More </a>
+            <a class="nav-link {{ Request::is('services') ? "active" : "" }}" href="/about">Services </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('about') ? "active" : "" }}" href="/about">Services </a>
+            <a class="nav-link {{ Request::is('blog') ? "active" : "" }}" href="/about">Rlog </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('about') ? "active" : "" }}" href="/about">About RtaMir </a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('contact') ? "active" : "" }}" href="/contact">Get In-touch</a>
