@@ -41,7 +41,7 @@ class PostController extends Controller
         $post = new Post;
         $post-> title = $request->title;
         $post->slug = $request->slug;
-        $post->body = $request->body;
+        $post->body = Purifier::clean($request->body);
         $post -> save();
 
         Session::flash('success', "Yoooohoooooo....! The Rlog post was successfuly saved Arta!");
@@ -82,7 +82,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->title = $request -> input('title');
         $post->slug = $request -> input('slug');
-        $post->body = $request -> input('body');
+        $post->body = Purifier::clean($request -> input('body'));
         $post->save();
 
         Session::flash('success',' The Rlog post was successfully updated, see you later!');
