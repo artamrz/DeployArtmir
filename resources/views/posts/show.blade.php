@@ -37,7 +37,6 @@
 				</form>
 				<div class="row">
 					<div class="col-md-12 d-grid mt-3">
-						{!!Html::linkRoute('posts.index','<< See All The Posts ',array($post->id),array('class'=>'btn btn-outline-dark'))!!}
 						<a href="{{ route('posts.index', $post->id) }}" class="btn btn-outline-dark">See All The Rlog Posts</a>
 					</div>
 				</div>
