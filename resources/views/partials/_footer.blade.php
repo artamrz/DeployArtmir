@@ -1,12 +1,12 @@
    <div class="container-fluid bg-dark">
        <footer class="d-flex justify-content-center m-5">
            <div class="row">
-               <div class="col-sm-4 offset-sm-1">
+               <div class="col-md-3 ">
                <a href="/" class="d-flex align-items-center mt-3 mb-3 link-dark text-decoration-none">
                    <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
                </a>
            </div>
-           <div class="col-sm-3 offset-sm-3">
+           <div class="col-md-3">
                <h6 class="text-light">Services</h6>
                <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
@@ -20,7 +20,7 @@
                    </li>
                </ul>
            </div>
-           <div class="col-sm-3">
+           <div class="col-md-3">
                <h6 class="text-light">Weblog</h6>
                    <ul class="nav navbar-nav flex-column">
                        <li class="nav-item mb-2">
