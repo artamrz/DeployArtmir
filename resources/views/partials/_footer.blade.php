@@ -9,7 +9,7 @@
             </div>
             
             <!-- Services Section -->
-            <div class="col-md-2 mb-3">
+            <div class="col-md-2 my-5">
                 <h6 class="text-light">Services</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -25,7 +25,7 @@
             </div>
 
             <!-- Weblog Section -->
-            <div class="col-md-2 mb-3">
+            <div class="col-md-2 my-5">
                 <h6 class="text-light">Weblog</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -38,7 +38,7 @@
             </div>
 
             <!-- How To Connect Section -->
-            <div class="col-md-2 mb-3">
+            <div class="col-md-2 my-5">
                 <h6 class="text-light">How To Connect</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
