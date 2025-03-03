@@ -25,13 +25,15 @@
    </div>
  </div>
  <div class="container-fluid mh-100 bg-dark d-flex justify-content-around" style="height: 280px;">
-      <div class="col-sm-4 mt-5 d-grid gap-2">
-          <h3 class="text-light text-center m-0">No Need To Subscribe</h3>
-          <div class="text-light text-center">Newsletters are out dated. Lets get engage in more interactive ways</div>
-          <a href="/contact" class="btn btn-light m-0" style="height:50px;">I Want To Know More</a>
-      </div>    
-      <div class="col-sm-4">
-        <img src="{{ asset('img/newsletter.png')}}" style="margin-top: -75px;" width="500" height="380" alt=""/>
+      <div class="row">
+          <div class="col-sm-4 mt-5 d-grid gap-2">
+              <h3 class="text-light text-center m-0">No Need To Subscribe</h3>
+              <div class="text-light text-center">Newsletters are out dated. Lets get engage in more interactive ways</div>
+              <a href="/contact" class="btn btn-light m-0" style="height:50px;">I Want To Know More</a>
+          </div>    
+          <div class="col-sm-4">
+              <img src="{{ asset('img/newsletter.png')}}" style="margin-top: -75px;" width="500" height="380" alt=""/>
+          </div>  
       </div>
  </div>
 
