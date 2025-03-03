@@ -41,7 +41,9 @@
                </ul>
            </div>
        </footer>
-       <p class="text-center text-light footer-background-dark mb-3 mt-3 ">Copyright © 2025 RtaMir| Innovating the Future | All Rights Reserved</p>
+    </div>
+    <div class="container-fluid bg-dark d-flex">   
+       <p class="text-center text-light footer-background-dark text-muted mb-3 mt-3 ">Copyright © 2025 RtaMir| Innovating the Future | All Rights Reserved</p>
    </div>
    
    
