@@ -1,5 +1,5 @@
-   <div class="container-fluid bg-dark d-flex">
-       <footer class="row row-cols-5 py-5 my-5 border-top">
+   <div class="container-fluid bg-dark">
+       <footer class="row justify-content-center py-5 my-5">
            <div class="col">
                <a href="/" class="d-flex align-items-center mt-3 mb-3 link-dark text-decoration-none">
                    <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
@@ -42,7 +42,7 @@
            </div>
        </footer>
     </div>
-    <div class="container-fluid bg-dark d-flex">   
+    <div class="container-fluid bg-dark d-flex border-top border-light">   
        <p class="text-center text-light footer-background-dark text-muted mb-3 mt-3 ">Copyright © 2025 RtaMir| Innovating the Future | All Rights Reserved</p>
    </div>
    
