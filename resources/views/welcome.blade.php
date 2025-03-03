@@ -24,18 +24,13 @@
      </div>
    </div>
  </div>
-<div class="container-fluid bg-dark d-flex justify-content-center" style="height: 280px;">
+<div class="container-fluid bg-dark d-flex py-3 justify-content-center">
     <div class="row w-100 justify-content-center align-items-center">
         <!-- Left Column: Text Content -->
         <div class="col-12 col-sm-4 text-center mb-3 mb-sm-0">
             <h3 class="text-light">No Need To Subscribe</h3>
             <p class="text-light">Newsletters are outdated. Let's engage in more interactive ways.</p>
             <a href="/contact" class="btn btn-light" style="height: 50px; width: 100%;">I Want To Know More</a>
-        </div>
-
-        <!-- Right Column: Image -->
-        <div class="col-12 col-sm-4 text-center">
-            <img src="{{ asset('img/newsletter.png') }}" class="img-fluid" alt="Newsletter Image">
         </div>
     </div>
 </div>
