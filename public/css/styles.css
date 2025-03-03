@@ -18,4 +18,73 @@ footer {
 html {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+/* carousel css*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+}
+
+.item {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* Position items manually */
+.item:nth-of-type(1) {
+  transform: translateX(-400px) rotateY(-15deg);
+  opacity: 0.5;
+}
+.item:nth-of-type(2) {
+  transform: translateX(-200px) rotateY(-10deg);
+  opacity: 0.8;
+}
+.item:nth-of-type(3) {
+  transform: translateX(0) scale(1);
+  z-index: 5;
+  opacity: 1;
+}
+.item:nth-of-type(4) {
+  transform: translateX(200px) rotateY(10deg);
+  opacity: 0.8;
+}
+.item:nth-of-type(5) {
+  transform: translateX(400px) rotateY(15deg);
+  opacity: 0.5;
+}
+
+.item:active ~ .item:nth-of-type(1) {
+  transform: translateX(-600px) rotateY(-20deg);
+  opacity: 0.3;
+}
+.item:active ~ .item:nth-of-type(2) {
+  transform: translateX(-400px) rotateY(-15deg);
+  opacity: 0.5;
+}
+.item:active ~ .item:nth-of-type(3) {
+  transform: translateX(-200px) rotateY(-10deg);
+  opacity: 0.8;
+}
+.item:active ~ .item:nth-of-type(4) {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+.item:active ~ .item:nth-of-type(5) {
+  transform: translateX(200px) rotateY(10deg);
+  opacity: 0.8;
+}
+
+/*end of carousel css*/
 
