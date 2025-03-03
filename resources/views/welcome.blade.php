@@ -24,9 +24,6 @@
      </div>
    </div>
  </div>
- <div class="container-fluid bg-dark d-flex py-3 justify-content-center">
- @include('partials._carousel')
- </div>
 <div class="container-fluid bg-dark d-flex py-3 justify-content-center">
     <div class="row w-100 justify-content-center align-items-center">
         <!-- Left Column: Text Content -->
