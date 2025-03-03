@@ -10,13 +10,13 @@
                <h5 class="text-light">Services</h5>
                <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
-                       <a href="/webapp" class="nav-link p-0">Web and Application Design</a>
+                       <a href="/webapp" class="nav-link text-decoration-none p-0">Web and Application Design</a>
                    </li>
                    <li class="nav-item mb-2">
-                      <a href="/seo" class="nav-link p-0">SEO and GEO Optimization</a> 
+                      <a href="/seo" class="nav-link text-decoration-none p-0">SEO and GEO Optimization</a> 
                    </li>    
                    <li class="nav-item mb-2">   
-                       <a href="/content" class="nav-link p-0">Content Management</a>
+                       <a href="/content" class="nav-link text-decoration-none p-0">Content Management</a>
                    </li>
                </ul>
            </div>
@@ -24,26 +24,26 @@
                <h5 class="text-light">Weblog</h5>
                    <ul class="nav navbar-nav flex-column">
                        <li class="nav-item mb-2">
-                           <a href="/rlog" class="nav-link p-0">Rlog Posts</a>
+                           <a href="/rlog" class="nav-link text-decoration-none p-0">Rlog Posts</a>
                        </li>
                        <li class="nav-item mb-2">
-                           <a href="/about" class="nav-link p-0">RtaMir</a>
+                           <a href="/about" class="nav-link text-decoration-none p-0">RtaMir</a>
                        </li>
                </ul>
                <h5 class="text-light">How To Connect</h5>
                <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
-                       <a href="/contact" class="nav-link p-0">Contact Form</a>
+                       <a href="/contact" class="nav-link text-decoration-none p-0">Contact Form</a>
                    </li>
                    <li class="nav-item mb-2">    
-                       <a href="#" class="nav-link p-0">Github | Linked-in | Email</a>
+                       <a href="#" class="nav-link text-decoration-none p-0">Github | Linked-in | Email</a>
                    </li>
                </ul>
            </div>
        </footer>
     </div>
     <div class="container-fluid bg-dark d-flex border-top border-light">   
-       <p class="text-center text-light footer-background-dark text-muted mb-3 mt-3 ">Copyright © 2025 RtaMir| Innovating the Future | All Rights Reserved</p>
+       <p class=" d-flex justify-content-center m-5 text-center text-light footer-background-dark text-muted mb-3 mt-3 ">Copyright © 2025 RtaMir| Innovating the Future | All Rights Reserved</p>
    </div>
    
    
