@@ -3,7 +3,7 @@
     <input type="radio" name="position" checked />
     <input type="radio" name="position" />
     <input type="radio" name="position" />
-    <main id="carousel">
+    <div id="carousel">
       <div class="item">
         <img src="x{{ asset('img/1.jpg')}}" />
         <h3 class="name">Sally Sharpe</h3>
@@ -49,5 +49,5 @@
           tempore.
         </p>
       </div>
-    </main>
+    </div>
 
