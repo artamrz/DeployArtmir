@@ -19,7 +19,7 @@
            @foreach($posts as $post)
                 <div class="">
                     <h2>{{ $post->title }}</h2>
-                    <p> {{ substr(strip_tags($post->body),0,300) }}{{strlen(strip_tags($post->body) >300 ? "..." : ""}}</p>
+                    <p> {{ substr(strip_tags($post->body),0,300) }}{{strlen(strip_tags($post->body)) >300 ? "..." : ""}}</p>
                     <a href="{{url('rlog.single/'.$post->id)}}" class="btn btn-dark">Read More</a>
                     <hr>
                 </div>
