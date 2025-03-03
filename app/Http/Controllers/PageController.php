@@ -10,7 +10,7 @@ use App\Models\Post;
 class PageController extends Controller
 {
     public function getIndex() {
-        $posts = Post::orderBy('id','desc')->paginate(5);
+        $posts = Post::limit(2)->get();
         return view('welcome', compact('posts'));
     }
     public function getRlog() {
