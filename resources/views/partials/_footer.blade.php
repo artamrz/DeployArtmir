@@ -1,12 +1,12 @@
    <div class="container-fluid bg-dark">
-       <footer class="d-flex justify-content-center m-5">
+       <footer class="justify-content-center m-5">
            <div class="row">
                <div class="col-md-6 ">
-               <a href="/" class="d-flex align-items-center mt-3 mb-3 link-dark text-decoration-none">
+               <a href="/" class="d-flex justify-content-center mt-3 mb-3 text-decoration-none">
                    <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
                </a>
            </div>
-               <div class="col-md-3">
+               <div class="col-md-2">
                <h6 class="text-light">Services</h6>
                <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
@@ -20,7 +20,7 @@
                    </li>
                </ul>
            </div>
-           <div class="col-md-3">
+           <div class="col-md-2">
                <h6 class="text-light">Weblog</h6>
                    <ul class="nav navbar-nav flex-column">
                        <li class="nav-item mb-2">
@@ -30,6 +30,8 @@
                            <a href="/about" class="nav-link text-decoration-none link-secondary p-0">RtaMir</a>
                        </li>
                </ul>
+           </div>
+           <div class="col-md-2">
                <h6 class="text-light">How To Connect</h6>
                <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
@@ -39,6 +41,7 @@
                        <a href="#" class="nav-link text-decoration-none link-secondary p-0">Github | Linked-in | Email</a>
                    </li>
                </ul>
+           </div>    
            </div>
            </div>
        </footer>
