@@ -17,7 +17,5 @@ class BlogController extends Controller
 
         $post = Post::where('slug', $slug)->first();
         return view('rlogs.single', compact('post'));
-        //$post = Post::where('slug' , '=' , '$slug')->first();
-        //return view('rlogs.single')->withPost($post);
     }
 }
