@@ -3,7 +3,7 @@
     @section('title','SEO')
     @section('content')
        <div class="row">
-            @include('partisals._carousel')
+            @include('partials._carousel')
        </div>
     @endsection
     @section('scripts')
