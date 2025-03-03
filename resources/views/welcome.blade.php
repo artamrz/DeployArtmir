@@ -33,7 +33,7 @@
         <img src="{{ asset('img/newsletter.png')}}" style="margin-top: -75px;" width="500" height="380" alt=""/>
       </div>
  </div>
- <br>
+</div>
  <div class="container">
     <div class="p-5 mb-4 bg-light rounded-3">
               <div class="container-fluid py-5">
