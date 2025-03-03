@@ -1,5 +1,5 @@
    <div class="container-fluid bg-dark">
-       <footer class="row justify-content-center py-5 my-5">
+       <footer class="d-flex justify-content-center m-5">
            <div class="col">
                <a href="/" class="d-flex align-items-center mt-3 mb-3 link-dark text-decoration-none">
                    <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
@@ -7,22 +7,22 @@
            </div>
            <div class="col"></div>
            <div class="col">
-               <h5>Services</h5>
-               <ul class="nav flex-column">
+               <h5 class="text-light">Services</h5>
+               <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
                        <a href="/webapp" class="nav-link p-0">Web and Application Design</a>
                    </li>
-                   <li>
+                   <li class="nav-item mb-2">
                       <a href="/seo" class="nav-link p-0">SEO and GEO Optimization</a> 
                    </li>    
-                   <li>   
+                   <li class="nav-item mb-2">   
                        <a href="/content" class="nav-link p-0">Content Management</a>
                    </li>
                </ul>
            </div>
            <div class="col">
-               <h5>Weblog</h5>
-                   <ul class="nav flex-column">
+               <h5 class="text-light">Weblog</h5>
+                   <ul class="nav navbar-nav flex-column">
                        <li class="nav-item mb-2">
                            <a href="/rlog" class="nav-link p-0">Rlog Posts</a>
                        </li>
@@ -30,12 +30,12 @@
                            <a href="/about" class="nav-link p-0">RtaMir</a>
                        </li>
                </ul>
-               <h5>How To Connect</h5>
-               <ul class="nav flex-column">
+               <h5 class="text-light">How To Connect</h5>
+               <ul class="nav navbar-nav flex-column">
                    <li class="nav-item mb-2">
                        <a href="/contact" class="nav-link p-0">Contact Form</a>
                    </li>
-                   <li>    
+                   <li class="nav-item mb-2">    
                        <a href="#" class="nav-link p-0">Github | Linked-in | Email</a>
                    </li>
                </ul>
