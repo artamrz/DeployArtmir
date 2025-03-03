@@ -20,7 +20,7 @@
                 <div class="">
                     <h2>{{ $post->title }}</h2>
                     <p> {{ substr(strip_tags($post->body),0,300) }}{{strlen(strip_tags($post->body)) >300 ? "..." : ""}}</p>
-                    <a href="{{url('rlog.single/'.$post->slug)}}" class="btn btn-dark">Read More</a>
+                    <a href="{{url('rlog/'.$post->slug}}" class="btn btn-dark">Read More</a>
                     <hr>
                 </div>
            @endforeach 
