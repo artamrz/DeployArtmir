@@ -24,7 +24,6 @@
      </div>
    </div>
  </div>
-
  <div class="container-fluid mh-100 bg-dark d-flex justify-content-around" style="height: 280px;">
       <div class="col-sm-4 mt-5 d-grid gap-2">
         <h3 class="text-light text-center m-0">No Need To Subscribe</h3>
@@ -34,7 +33,8 @@
         <img src="{{ asset('img/newsletter.png')}}" style="margin-top: -75px;" width="500" height="380" alt=""/>
       </div>
  </div>
- <div class="container-fluid">
+ <br>
+ <div class="container">
     <div class="p-5 mb-4 bg-light rounded-3">
               <div class="container-fluid py-5">
                 @foreach($posts as $post)
