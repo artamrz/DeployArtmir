@@ -1,6 +1,6 @@
    <div class="container-fluid bg-dark">
        <footer class="justify-content-center m-5">
-           <div class="row">
+           <div class="row text-center">
                <div class="col-md-6 ">
                <a href="/" class="d-flex justify-content-center mt-3 mb-3 text-decoration-none">
                    <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
