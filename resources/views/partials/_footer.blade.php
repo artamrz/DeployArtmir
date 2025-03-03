@@ -1,8 +1,8 @@
-   <div class="container bg-dark">
+   <div class="container-fluid bg-dark d-flex">
        <footer class="row row-cols-5 py-5 my-5 border-top">
            <div class="col">
-               <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                   <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="107" height="70">
+               <a href="/" class="d-flex align-items-center mt-3 mb-3 link-dark text-decoration-none">
+                   <img src="{{ asset('img/Rtamir-logo-tps0-200px.png') }}" alt="RtaMirLogo" width="207" height="170">
                </a>
            </div>
            <div class="col"></div>
@@ -10,13 +10,13 @@
                <h5>Services</h5>
                <ul class="nav flex-column">
                    <li class="nav-item mb-2">
-                       <a href="{{url('services.webApp')}}" class="nav-link p-0">Web and Application Design</a>
+                       <a href="/webapp" class="nav-link p-0">Web and Application Design</a>
                    </li>
                    <li>
-                      <a href="{{url('services.seo')}}" class="nav-link p-0">SEO and GEO Optimization</a> 
+                      <a href="/seo" class="nav-link p-0">SEO and GEO Optimization</a> 
                    </li>    
                    <li>   
-                       <a href="{{url('services.content')}}" class="nav-link p-0">Content Management</a>
+                       <a href="/content" class="nav-link p-0">Content Management</a>
                    </li>
                </ul>
            </div>
