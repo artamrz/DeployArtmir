@@ -1,11 +1,15 @@
- @extends('wlc-main')
+ @extends('main')
 
  @section('title','Home')
 
 
- @section('content') 
+ @section('content')
 
- <div class="d-flex justify-content-center m-5">
+ <div class="container-fluid">
+   @include('partials._slider') 
+ </div> 
+
+ <div class="container-fluid d-flex justify-content-center m-5">
    <div class="row">
      <div class="col-md-4 ">
          <img src="{{ asset('img/RD.jpg')}}" class="mx-auto d-block rounded-circle m-3" width="140" height="140" alt=""/>
@@ -28,7 +32,7 @@
     <div class="row w-100 justify-content-center align-items-center">
         <!-- Left Column: Text Content -->
         <div class="col-12 col-sm-4 text-center mb-3 mb-sm-0">
-            <h3 class="text-light">No Need To Subscribe</h3>
+            <h3 class="text-light">No Need To FUCK Subscribe</h3>
             <p class="text-light">Newsletters are outdated. Let's engage in more interactive ways.</p>
             <a href="/contact" class="btn btn-light" style="height: 50px; width: 100%;">I Want To Know More</a>
         </div>
