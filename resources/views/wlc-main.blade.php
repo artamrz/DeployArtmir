@@ -10,7 +10,7 @@
 
     @include('partials._nav')
      @include('partials._slider')
-   <div class="py-4">
+   <div class="container-fluid py-4">
       
       @include('partials._messages')
       @yield('content')

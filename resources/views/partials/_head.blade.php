@@ -12,5 +12,5 @@
     
     @yield('stylesheets')
 
-    <title>Laravel 8 | @yield('title') </title>
+    <title>RtaMir | @yield('title') </title>
   

@@ -18,25 +18,12 @@ footer {
 html {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-/* carousel css*/
-.item img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: 15px;
+.border-3 {
+    border: 3px solid;
 }
 
-.name {
-  margin-bottom: 2px;
-  color: #8c52ff;
-}
 
-.occupation {
-  font-style: italic;
-  margin-top: 2px;
-}
-
-main#carousel {
+.carousel-box #CarouselBox {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
   width: 100vw;
@@ -52,11 +39,24 @@ main#carousel {
   --position: 1;
   pointer-events: none;
 }
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.name {
+  margin-bottom: 2px;
+  color: #8c52ff;
+}
 
+.occupation {
+  font-style: italic;
+  margin-top: 2px;
+}
 div.item {
   text-align: center;
   padding: 20px;
-  border: 3px solid black;
   border-radius: 20px;
   background-color: #fff;
   position: absolute;
@@ -70,7 +70,6 @@ div.item {
     translateX(calc(-300px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
 }
-
 div.item:nth-of-type(1) {
   --offset: 1;
 }
@@ -80,19 +79,13 @@ div.item:nth-of-type(2) {
 div.item:nth-of-type(3) {
   --offset: 3;
 }
-div.item:nth-of-type(4) {
-  --offset: 4;
-}
-div.item:nth-of-type(5) {
-  --offset: 5;
-}
 
 input:nth-of-type(1) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(1):checked ~ main#carousel {
+input:nth-of-type(1):checked ~ .carousel-box#CarouselBox {
   --position: 1;
 }
 
@@ -100,7 +93,7 @@ input:nth-of-type(2) {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
-input:nth-of-type(2):checked ~ main#carousel {
+input:nth-of-type(2):checked ~ .carousel-box#CarouselBox {
   --position: 2;
 }
 
@@ -108,26 +101,7 @@ input:nth-of-type(3) {
   grid-column: 4 /5;
   grid-row: 2 / 3;
 }
-input:nth-of-type(3):checked ~ main#carousel {
+input:nth-of-type(3):checked ~ .carousel-box#CarouselBox {
   --position: 3;
 }
-
-input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel {
-  --position: 4;
-}
-
-input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel {
-  --position: 5;
-}
-
-
-/*end of carousel css*/
 
